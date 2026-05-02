@@ -343,13 +343,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified section-card">
           <p>
-            Recent diffusion-based video generation models produce impressive visual quality, but they still struggle with physically consistent and causally plausible dynamics, especially in long-horizon interaction-heavy scenes. CausalMotion addresses this limitation with a training-free framework that injects explicit physical reasoning into inference.
-          </p>
-          <p>
-            A vision-language model decomposes a prompt into a sequence of causally consistent keyframes and object-centric motion trajectories. These intermediate representations are then temporally aligned and introduced as soft constraints for a pretrained video diffusion model.
-          </p>
-          <p>
-            The result is stronger physical plausibility and temporal coherence without retraining, extra supervision, or architecture changes.
+            Recent advances in diffusion-based video generation have significantly improved visual quality and short-term temporal coherence. However, existing methods still struggle to produce videos with physically consistent and causally plausible dynamics, especially in scenarios involving long-horizon interactions. This limitation arises from their reliance on implicitly learned correlations without explicit modeling of physical structure. In this work, we propose <strong>CausalMotion</strong>, a training-free framework that injects explicit physical reasoning into video generation through structured intermediate representations. Our key idea is to decouple reasoning from generation by leveraging a vision-language model to decompose a text prompt into a sequence of causally consistent keyframes and object-centric motion trajectories. These representations are then aligned and integrated as soft constraints to guide a pretrained video diffusion model during inference. This design enables explicit modeling of object dynamics and causal transitions without requiring additional training or supervision. Extensive experiments show that our method consistently improves physical plausibility and temporal coherence, particularly in dynamics-intensive scenarios, while maintaining high perceptual video quality.
           </p>
         </div>
       </div>
@@ -405,25 +399,21 @@
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/wan/milk.mp4" type="video/mp4">
             </video>
-            <div class="card-label">Wan2.1 baseline</div>
           </div>
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/ltx/milk-is-poured-into-a-cup-of-black.mp4" type="video/mp4">
             </video>
-            <div class="card-label">CausalMotion (ours)</div>
           </div>
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/vlipp/milk.mp4" type="video/mp4">
             </video>
-            <div class="card-label">VLIPP</div>
           </div>
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/Milk_is_poured_into_a.mp4" type="video/mp4">
             </video>
-            <div class="card-label">CausalMotion (ours)</div>
           </div>
         </div>
       </div>
@@ -447,25 +437,21 @@
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/wan/icecream.mp4" type="video/mp4">
             </video>
-            <div class="card-label">Wan2.1 baseline</div>
           </div>
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/ltx/an-ice-cream-cone-is-left-out-in-the.mp4" type="video/mp4">
             </video>
-            <div class="card-label">CausalMotion (ours)</div>
           </div>
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/vlipp/icecream.mp4" type="video/mp4">
             </video>
-            <div class="card-label">VLIPP</div>
           </div>
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/An_ice_cream_cone_is.mp4" type="video/mp4">
             </video>
-            <div class="card-label">CausalMotion (ours)</div>
           </div>
         </div>
       </div>
@@ -480,7 +466,7 @@
         <div class="comparison-table three-col">
           <div></div>
           <div class="comparison-col-title">VLIPP</div>
-          <div class="comparison-col-title">PhyGDPO</div>
+          <div class="comparison-col-title">PhyT2V</div>
           <div class="comparison-col-title">CausalMotion</div>
 
           <!-- <div class="comparison-row-label">Video Comparison</div> -->
@@ -489,19 +475,16 @@
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/vlipp/output_73.mp4" type="video/mp4">
             </video>
-            <div class="card-label">VLIPP</div>
           </div>
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/phygdpo/ours_73.mp4" type="video/mp4">
+              <source src="./static/videos/phyt2v/output2.mp4" type="video/mp4">
             </video>
-            <div class="card-label">PhyGDPO</div>
           </div>
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/output_video_73.mp4" type="video/mp4">
             </video>
-            <div class="card-label">CausalMotion (ours)</div>
           </div>
         </div>
       </div>
@@ -516,7 +499,7 @@
         <div class="comparison-table three-col">
           <div></div>
           <div class="comparison-col-title">VLIPP</div>
-          <div class="comparison-col-title">PhyGDPO</div>
+          <div class="comparison-col-title">PhyT2V</div>
           <div class="comparison-col-title">CausalMotion</div>
 
           <!-- <div class="comparison-row-label">Video Comparison</div> -->
@@ -525,19 +508,16 @@
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/vlipp/output_141.mp4" type="video/mp4">
             </video>
-            <div class="card-label">VLIPP</div>
           </div>
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/phygdpo/ours_141.mp4" type="video/mp4">
+              <source src="./static/videos/phyt2v/output1.mp4" type="video/mp4">
             </video>
-            <div class="card-label">PhyGDPO</div>
           </div>
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/output_video_141.mp4" type="video/mp4">
             </video>
-            <div class="card-label">CausalMotion (ours)</div>
           </div>
         </div>
       </div>
