@@ -227,6 +227,14 @@
       background: #e5e7eb;
     }
 
+    .comparison-video-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #e5e7eb;
+    }
+
     .comparison-video-card .card-label,
     .comparison-reserved-card .card-label {
       padding: 0.7rem 0.85rem 0.9rem;
@@ -252,6 +260,46 @@
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1rem;
       margin-top: 1rem;
+    }
+
+    .eval-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .eval-card {
+      border: 1px solid var(--cm-border);
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.04);
+    }
+
+    .eval-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #f8fafc;
+    }
+
+    .eval-card .card-label {
+      padding: 0.85rem 1rem 1rem;
+      font-size: 0.94rem;
+      color: #334155;
+      border-top: 1px solid var(--cm-border);
+      background: #fff;
+    }
+
+    .eval-card .card-label strong {
+      color: #1f2937;
+    }
+
+    .eval-tip {
+      margin-top: 0.75rem;
+      color: var(--cm-muted);
+      font-size: 0.93rem;
     }
 
     @media screen and (max-width: 900px) {
@@ -374,7 +422,34 @@
 </section>
 
 <section class="section" id="results">
-  
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Quantitative Comparisons
+    </h2>
+
+    <div class="section-card content">
+      <p>
+        We evaluate <strong>CausalMotion</strong> on PhyGenBench using the PhyGenEval protocol and compare it against
+        both general video generation baselines and physically grounded methods. The results show the best overall
+        average performance, with especially strong gains in mechanics and thermal scenarios.
+      </p>
+
+      <div class="eval-grid">
+        <div class="eval-card">
+          <img src="./static/images/quantitative-phygenbench.png" alt="Quantitative comparison on PhyGenBench">
+          <div class="card-label">
+            <strong>Table 1.</strong> Quantitative comparison on PhyGenBench across mechanics, optics, thermal, and material categories.
+          </div>
+        </div>
+        <div class="eval-card">
+          <img src="./static/images/vbench-vlm-judge.png" alt="VBench and VLM-as-judge evaluation">
+          <div class="card-label">
+            <strong>Table 2.</strong> VBench and VLM-as-judge evaluation for physical plausibility, temporal consistency,
+            semantic alignment, and overall quality.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="section" id="qualitative">
