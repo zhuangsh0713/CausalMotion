@@ -179,13 +179,13 @@
 
     .comparison-table {
       display: grid;
-      grid-template-columns: 110px repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 0.9rem;
       align-items: stretch;
     }
 
     .comparison-table.three-col {
-      grid-template-columns: 110px repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .comparison-col-title {
@@ -387,14 +387,14 @@
           <p><strong>Prompt:</strong> Milk is poured into a cup of black coffee.</p>
         </div>
         <div class="comparison-table">
-          <div></div>
+          <!-- <div></div> -->
           <div class="comparison-col-title">Wan2.1</div>
           <div class="comparison-col-title">LTX-Video</div>
           <div class="comparison-col-title">VLIPP</div>
           <div class="comparison-col-title">CausalMotion</div>
 
           <!-- <div class="comparison-row-label">Video Comparison</div> -->
-          <div></div>
+          <!-- <div></div> -->
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/wan/milk.mp4" type="video/mp4">
@@ -425,14 +425,14 @@
           <p><strong>Prompt:</strong> An ice cream cone is left out in the sun.</p>
         </div>
         <div class="comparison-table">
-          <div></div>
+          <!-- <div></div> -->
           <div class="comparison-col-title">Wan2.1</div>
           <div class="comparison-col-title">LTX-Video</div>
           <div class="comparison-col-title">VLIPP</div>
           <div class="comparison-col-title">CausalMotion</div>
 
           <!-- <div class="comparison-row-label">Video Comparison</div> -->
-          <div></div>
+          <!-- <div></div> -->
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/wan/icecream.mp4" type="video/mp4">
@@ -463,14 +463,15 @@
           <!-- <h3 class="title is-4">Comparison C: Egg Falling</h3> -->
           <p><strong>Prompt:</strong> A wooden pencil is carefully dipped into a glass of crystal-clear water, showing the intriguing visual shifts and reflections caused by the interaction between the pencil and the liquid. </p>
         </div>
-        <div class="comparison-table three-col">
-          <div></div>
+        <div class="comparison-table">
+          <!-- <div></div> -->
           <div class="comparison-col-title">VLIPP</div>
           <div class="comparison-col-title">PhyT2V</div>
+          <div class="comparison-col-title">LLM-grounded Video Diffusion</div>
           <div class="comparison-col-title">CausalMotion</div>
 
           <!-- <div class="comparison-row-label">Video Comparison</div> -->
-          <div></div>
+          <!-- <div></div> -->
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/vlipp/output_73.mp4" type="video/mp4">
@@ -480,6 +481,9 @@
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/phyt2v/output2.mp4" type="video/mp4">
             </video>
+          </div>
+          <div class="comparison-video-card">
+            <img src="./static/videos/llm-grounded/video_1.gif" alt="LLM-grounded result">
           </div>
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
@@ -496,14 +500,15 @@
           <!-- <h3 class="title is-4">Comparison D: Chameleon Catching a Flying Insect</h3> -->
           <p><strong>Prompt:</strong> A small burning ball of paper was thrown into a pile of dry paper.</p>
         </div>
-        <div class="comparison-table three-col">
-          <div></div>
+        <div class="comparison-table">
+          <!-- <div></div> -->
           <div class="comparison-col-title">VLIPP</div>
           <div class="comparison-col-title">PhyT2V</div>
+          <div class="comparison-col-title">LLM-grounded Video Diffusion</div>
           <div class="comparison-col-title">CausalMotion</div>
 
           <!-- <div class="comparison-row-label">Video Comparison</div> -->
-          <div></div>
+          <!-- <div></div> -->
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/vlipp/output_141.mp4" type="video/mp4">
@@ -513,6 +518,9 @@
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/phyt2v/output1.mp4" type="video/mp4">
             </video>
+          </div>
+          <div class="comparison-video-card">
+            <img src="./static/videos/llm-grounded/video_0.gif" alt="LLM-grounded result">
           </div>
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
