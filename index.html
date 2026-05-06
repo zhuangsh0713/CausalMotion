@@ -302,7 +302,169 @@
       font-size: 0.93rem;
     }
 
+    .intermediate-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1.25rem;
+    }
+
+    .intermediate-case {
+      border: 1px solid var(--cm-border);
+      border-radius: 18px;
+      background: linear-gradient(180deg, #fbfdff 0%, #ffffff 100%);
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04);
+      padding: 1.25rem;
+    }
+
+    .intermediate-case-header {
+      margin-bottom: 1rem;
+    }
+
+    .intermediate-case-header p {
+      color: var(--cm-muted);
+      margin-top: 0.35rem;
+      margin-bottom: 0;
+    }
+
+    .intermediate-storyboard {
+      display: grid;
+      grid-template-columns: 1.05fr 1.1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .intermediate-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .intermediate-panel {
+      border: 1px solid var(--cm-border);
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .intermediate-panel-header {
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid var(--cm-border);
+      background: #f8fbff;
+    }
+
+    .intermediate-panel-header h3 {
+      margin: 0;
+      color: #1f2937;
+    }
+
+    .intermediate-panel-header p {
+      margin: 0.3rem 0 0;
+      color: var(--cm-muted);
+      font-size: 0.92rem;
+    }
+
+    .intermediate-media {
+      background: #f8fafc;
+    }
+
+    .intermediate-media img,
+    .intermediate-media video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: contain;
+      background: #eef2f7;
+    }
+
+    .intermediate-panel .video-placeholder,
+    .intermediate-panel .figure-placeholder {
+      border: 0;
+      border-radius: 0;
+      min-height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .intermediate-panel-body {
+      padding: 0.9rem 1rem 1rem;
+    }
+
+    .intermediate-panel-body p {
+      color: var(--cm-muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .trajectory-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 0.7rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .trajectory-tag {
+      border: 1px solid var(--cm-border);
+      border-radius: 12px;
+      padding: 0.7rem 0.8rem;
+      background: #fcfdff;
+    }
+
+    .trajectory-tag strong {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--cm-muted);
+      margin-bottom: 0.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .trajectory-tag span {
+      color: #1e3a70;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .trajectory-code {
+      margin-top: 0.85rem;
+      border: 1px solid var(--cm-border);
+      border-radius: 14px;
+      background: #0f172a;
+      color: #dbeafe;
+      padding: 0.95rem 1rem;
+      font-size: 0.83rem;
+      line-height: 1.5;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    .intermediate-note {
+      margin-top: 1rem;
+      padding: 0.95rem 1rem;
+      border-radius: 14px;
+      background: var(--cm-accent-soft);
+      color: #36517e;
+      font-size: 0.93rem;
+    }
+
+    .asset-path {
+      display: inline-block;
+      font-size: 0.82rem;
+      color: #34528d;
+      background: var(--cm-accent-soft);
+      border-radius: 999px;
+      padding: 0.28rem 0.7rem;
+      word-break: break-all;
+    }
+
     @media screen and (max-width: 900px) {
+      .intermediate-storyboard {
+        grid-template-columns: 1fr;
+      }
+
       .comparison-table,
       .comparison-table.three-col {
         grid-template-columns: 1fr;
@@ -445,6 +607,82 @@
           <div class="card-label">
             <strong>Table 2.</strong> VBench and VLM-as-judge evaluation for physical plausibility, temporal consistency,
             semantic alignment, and overall quality.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="intermediate-results">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Intermediate Results</h2>
+
+    <div class="section-card content">
+      <p>
+        To better explain the pipeline shown in the overview and method figures, we provide intermediate visualizations for representative examples, including generated keyframes and trajectory alignment.
+      </p>
+
+      <div class="intermediate-flow">
+        <div class="intermediate-case">
+          <div class="intermediate-case-header">
+            <!-- <h3 class="title is-4">Example: A vibrant, elastic basketball is thrown forcefully towards the ground, capturing its dynamic interaction with the surface upon impact.</h3> -->
+            <p>Prompt: A vibrant, elastic basketball is thrown forcefully towards the ground, capturing its dynamic interaction with the surface upon impact.</p>
+          </div>
+
+          <div class="intermediate-storyboard">
+            <div class="intermediate-stack">
+              <div class="intermediate-panel">
+                <div class="intermediate-panel-header">
+                  <h3 class="title is-5">Keyframes</h3>
+                  <p>Use a single overview image or a stitched panel of sparse causal states.</p>
+                </div>
+                <div class="intermediate-media">
+                  <img src="./static/images/intermediate/0.png" alt="Keyframe visualization">
+                  <img src="./static/images/intermediate/1.png" alt="Keyframe visualization">
+                  <img src="./static/images/intermediate/2.png" alt="Keyframe visualization">
+                  <img src="./static/images/intermediate/3.png" alt="Keyframe visualization">
+                </div>
+              </div>
+            </div>
+
+            <div class="intermediate-stack">
+              <div class="intermediate-panel">
+                <div class="intermediate-panel-header">
+                  <h3 class="title is-5">Predicted Trajectory</h3>
+                </div>
+                <div class="intermediate-panel-body">
+                  <div class="trajectory-meta">
+                    <div class="trajectory-tag"><strong>Object</strong><span>basketball</span></div>
+                    <div class="trajectory-tag"><strong>Format</strong><span>[x, y, w, h]</span></div>
+                  </div>
+                  <pre class="trajectory-code">"Frames": {
+  "1": [{"id": 0, "name": "basketball", "box": [255, 93, 204, 194]}],
+  "2": [{"id": 0, "name": "basketball", "box": [255, 167, 204, 194]}],
+  "...": "...",
+  "13": [{"id": 0, "name": "basketball", "box": [255, 93, 204, 194]}]
+}</pre>
+                </div>
+              </div>
+
+              <div class="intermediate-panel">
+                <div class="intermediate-panel">
+                  <div class="intermediate-panel-header">
+                    <h3 class="title is-5">Alignment Video</h3>
+                  </div>
+                  <div class="intermediate-media">
+                    <video controls muted loop playsinline>
+                      <source src="./static/videos/alignment_with_keyframes.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="intermediate-note">
+            Suggested presentation: use <strong>trajectory image + optional bbox text together</strong>. If space is limited, keep the image on the page and move the full numeric prediction to a collapsible block or supplementary material.
           </div>
         </div>
       </div>
@@ -617,6 +855,7 @@
           <div class="video-placeholder">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/An_egg_falling_from_the.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="card-label">An egg falling from the sky towards concrete ground.
           </div>
@@ -625,6 +864,8 @@
           <div class="video-placeholder">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/output_video_8.mp4" type="video/mp4">
+            </video>
+
           </div>
           <div class="card-label">A tennis ball is gently placed on the surface of a bucket filled with water.</div>
         </div>
@@ -632,6 +873,8 @@
           <div class="video-placeholder">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/output_video_135.mp4" type="video/mp4">
+            </video>
+
           </div>
           <div class="card-label">A weak, frail porcelain plate is flung with significant speed at a robust, wooden table, where it collides upon impact.</div>
         </div>
@@ -639,6 +882,7 @@
           <div class="video-placeholder">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/output_video_15.mp4" type="video/mp4">
+
           </div>
           <div class="card-label">A timelapse of a water-filled soft cloth being forcefully squeezed by hand, with the pressure intensifying rapidly over time.</div>
         </div>
@@ -646,6 +890,8 @@
           <div class="video-placeholder">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/output_video_38.mp4" type="video/mp4">
+            </video>
+
           </div>
           <div class="card-label">A glistening dewdrop is sliding gracefully across the smooth surface of a waxed apple, accentuating its shape as it moves.</div>
         </div>
@@ -653,6 +899,8 @@
           <div class="video-placeholder">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/output_video_68.mp4" type="video/mp4">
+            </video>
+
           </div>
           <div class="card-label">A magnifying glass is gradually moving closer to a leaf, revealing the intricate details and textures of the veins and surface patterns as it approaches.</div>
         </div>
@@ -660,6 +908,8 @@
           <div class="video-placeholder">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/output_video_99.mp4" type="video/mp4">
+            </video>
+
           </div>
           <div class="card-label">A timelapse captures the gradual transformation of ice cream as the temperature rises significantly.</div>
         </div>
@@ -667,6 +917,8 @@
           <div class="video-placeholder">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/A_chameleon_eats_a_flying.mp4" type="video/mp4">
+            </video>
+
           </div>
           <div class="card-label">A chameleon eats a flying insect.
           </div>
@@ -675,6 +927,8 @@
           <div class="video-placeholder">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/output_video_109.mp4" type="video/mp4">
+            </video>
+
           </div>
           <div class="card-label">A timelapse captures the transformation of tea in a teapot as the temperature rapidly rises above 100℃.</div>
         </div>
