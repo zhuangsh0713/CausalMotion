@@ -553,7 +553,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified section-card">
           <p>
-            Recent advances in diffusion-based video generation have significantly improved visual quality and short-term temporal coherence. However, existing methods still struggle to produce videos with physically consistent and causally plausible dynamics, especially in scenarios involving long-horizon interactions. This limitation arises from their reliance on implicitly learned correlations without explicit modeling of physical structure. In this work, we propose <strong>CausalMotion</strong>, a training-free framework that injects explicit physical reasoning into video generation through structured intermediate representations. Our key idea is to decouple reasoning from generation by leveraging a vision-language model to decompose a text prompt into a sequence of causally consistent keyframes and object-centric motion trajectories. These representations are then aligned and integrated as soft constraints to guide a pretrained video diffusion model during inference. This design enables explicit modeling of object dynamics and causal transitions without requiring additional training or supervision. Extensive experiments show that our method consistently improves physical plausibility and temporal coherence, particularly in dynamics-intensive scenarios, while maintaining high perceptual video quality.
+            Recent advances in diffusion-based video generation have significantly improved visual quality and short-term temporal coherence. However, existing methods still struggle to produce videos with physically consistent and causally plausible dynamics, especially in scenarios involving long-horizon interactions. This limitation arises from the fact that video diffusion models can only learn physical consistency implicitly, while vision-language models can directly model physical laws. Based on this idea, in this work, we propose <strong>CausalMotion</strong>, a training-free framework that injects explicit physical reasoning into video generation through structured intermediate representations. Our key idea is to decouple reasoning from generation by leveraging a vision-language model to decompose a text prompt into a sequence of causally consistent keyframes and object-centric motion trajectories. These representations are then aligned and integrated as soft constraints to guide a pretrained video diffusion model during inference. This design enables explicit modeling of object dynamics and causal transitions without requiring additional training or supervision. Extensive experiments show that our method consistently improves physical plausibility and temporal coherence, particularly in dynamics-intensive scenarios, while maintaining high perceptual video quality.
           </p>
         </div>
       </div>
@@ -722,44 +722,6 @@
           <div class="comparison-video-card">
             <video autoplay controls muted loop playsinline>
               <source src="./static/videos/myresult/Milk_is_poured_into_a.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="comparison-section">
-      <div class="section-card">
-        <div class="comparison-header content">
-          <p><strong>Prompt:</strong> An ice cream cone is left out in the sun.</p>
-        </div>
-        <div class="comparison-table">
-          <!-- <div></div> -->
-          <div class="comparison-col-title">Wan2.1</div>
-          <div class="comparison-col-title">LTX-Video</div>
-          <div class="comparison-col-title">VLIPP</div>
-          <div class="comparison-col-title">CausalMotion</div>
-
-          <!-- <div class="comparison-row-label">Video Comparison</div> -->
-          <!-- <div></div> -->
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/wan/icecream.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/ltx/an-ice-cream-cone-is-left-out-in-the.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/vlipp/icecream.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/myresult/An_ice_cream_cone_is.mp4" type="video/mp4">
             </video>
           </div>
         </div>
