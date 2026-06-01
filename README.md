@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1># CausalMotion: Structured Physical Reasoning as Keyframe and Trajectory Guidance for Training-Free Video Generation</h1>
+<h1>CausalMotion: Structured Physical Reasoning as Keyframe and Trajectory Guidance for Training-Free Video Generation</h1>
 
 
 
@@ -13,9 +13,9 @@
 <a href="https://wyhsirius.github.io/">Yaohui Wang</a><sup>2&dagger;</sup></p>
 
 
-<span class="author-block"><sup>1</sup>ShanghaiTeh University</span>
+<span class="author-block"><sup>1</sup>ShanghaiTech University</span>
 <span class="author-block"><sup>2</sup>Shanghai Artificial Intelligence Laboratory</span>
-<span class="author-block"><sup>3</sup>The Chinese University of Hong Kong<sup>4,2</sup></span>
+<span class="author-block"><sup>3</sup>The Chinese University of Hong Kong</span>
 
 
 </div>
@@ -230,7 +230,7 @@ This directory is close to GitHub-ready, but keep these points in mind before pu
 - Add a `LICENSE` file before public release if you want others to have clear reuse terms.
 - Verify that the referenced `LTX-Video` submodule URL is the public repo you want users to clone.
 
-## Citation
+<!-- ## Citation
 
 If you use this code, please cite the project paper when it becomes available.
 
@@ -240,12 +240,5 @@ If you use this code, please cite the project paper when it becomes available.
   author={Sihan Zhuang and Xinyuan Chen and Tianfan Xue and Yaohui Wang},
   year={2026}
 }
-```
+``` -->
 
-## Acknowledgements
-
-This project builds on:
-
-- [Grounded-SAM-2](https://github.com/IDEA-Research/Grounded-SAM-2)
-- [LTX-Video](https://github.com/Lightricks/LTX-Video)
-- OpenAI-compatible VLM / image generation APIs
