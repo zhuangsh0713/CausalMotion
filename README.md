@@ -221,15 +221,6 @@ data_root/
     └── <exp_name>.mp4
 ```
 
-## Notes for GitHub Release
-
-This directory is close to GitHub-ready, but keep these points in mind before publishing:
-
-- Make sure `Grounded-SAM-2` and `LTX-Video` are included as real git submodules in the final repo history, not just listed in `.gitmodules`.
-- Do not commit API keys, downloaded checkpoints, or generated data.
-- Add a `LICENSE` file before public release if you want others to have clear reuse terms.
-- Verify that the referenced `LTX-Video` submodule URL is the public repo you want users to clone.
-
 <!-- ## Citation
 
 If you use this code, please cite the project paper when it becomes available.
