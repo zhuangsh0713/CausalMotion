@@ -4,7 +4,7 @@
 
 
 
-[![](https://img.shields.io/static/v1?label=CausalMotion&message=Project&color=purple)](https://zhuangsh0713.github.io/CausalMotion/)   [![](https://img.shields.io/static/v1?label=Paper&message=Arxiv&color=red&logo=arxiv)]()   [![](https://img.shields.io/static/v1?label=Code&message=Github&color=blue&logo=github)]()   
+[![](https://img.shields.io/static/v1?label=CausalMotion&message=Project&color=purple)](https://zhuangsh0713.github.io/CausalMotion/)   [![](https://img.shields.io/static/v1?label=Paper&message=Arxiv&color=red&logo=arxiv)](https://arxiv.org/abs/2606.14317)   [![](https://img.shields.io/static/v1?label=Code&message=Github&color=blue&logo=github)](https://github.com/zhuangsh0713/CausalMotion)   
 
                     
 <p>Sihan Zhuang</a><sup>1,2*</sup>,
@@ -221,15 +221,19 @@ data_root/
     └── <exp_name>.mp4
 ```
 
-<!-- ## Citation
+## Citation
 
 If you use this code, please cite the project paper when it becomes available.
 
 ```bibtex
-@misc{causalmotion2026,
-  title={CausalMotion: Structured Physical Reasoning as Keyframe and Trajectory Guidance for Training-Free Video Generation},
-  author={Sihan Zhuang and Xinyuan Chen and Tianfan Xue and Yaohui Wang},
-  year={2026}
+@misc{zhuang2026causalmotionstructuredphysicalreasoning,
+      title={CausalMotion: Structured Physical Reasoning as Keyframe and Trajectory Guidance for Training-Free Video Generation}, 
+      author={Sihan Zhuang and Xinyuan Chen and Tianfan Xue and Yaohui Wang},
+      year={2026},
+      eprint={2606.14317},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2606.14317}, 
 }
-``` -->
+```
 
