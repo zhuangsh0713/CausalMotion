@@ -42,20 +42,224 @@
     .publication-authors, .publication-affiliations { color: var(--cm-muted); }
 
     .quick-links {
-      margin-top: 1.5rem;
+      margin-top: 1.25rem;
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
+      gap: 0.6rem;
       justify-content: center;
     }
 
-    .quick-links .button { min-width: 120px; }
+    .quick-links .button {
+      min-width: 110px;
+      font-size: 0.92rem;
+    }
 
     .project-note {
       color: var(--cm-muted);
       font-size: 0.98rem;
       max-width: 860px;
       margin: 1rem auto 0;
+    }
+
+    .overview-image {
+      width: 100%;
+      max-width: 1050px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .abstract-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .abstract-content p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+    .method-intro {
+      max-width: 850px;
+      margin: 0 auto 2rem;
+      text-align: center;
+      color: var(--cm-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .method-pipeline {
+      max-width: 900px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .pipeline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      padding: 1.15rem 1.35rem;
+      background: #ffffff;
+      border: 1px solid var(--cm-border);
+      border-radius: 14px;
+    }
+
+    .pipeline-number {
+      flex: 0 0 auto;
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--cm-accent-soft);
+      color: var(--cm-accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .pipeline-item h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.05rem;
+    }
+
+    .pipeline-item p {
+      margin: 0;
+      color: var(--cm-muted);
+      font-size: 0.93rem;
+      line-height: 1.6;
+    }
+
+    .pipeline-arrow {
+      text-align: center;
+      color: var(--cm-accent);
+      font-size: 1.2rem;
+      line-height: 1;
+      padding: 0.45rem 0;
+    }
+
+    .method-figure {
+      text-align: center;
+    }
+
+    .method-figure img {
+      width: 100%;
+      max-width: 1100px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .method-figure .caption {
+      max-width: 900px;
+      margin: 0.9rem auto 0;
+    }
+
+    .results-intro {
+      max-width: 850px;
+      margin: 0 auto 2.5rem;
+      text-align: center;
+      color: var(--cm-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .result-block {
+      margin-bottom: 3.5rem;
+    }
+
+    .result-heading {
+      max-width: 850px;
+      margin: 0 auto 1.25rem;
+    }
+
+    .result-heading h3 {
+      margin-bottom: 0.45rem;
+      font-size: 1.25rem;
+    }
+
+    .result-heading p {
+      margin: 0;
+      color: var(--cm-muted);
+      line-height: 1.6;
+    }
+
+    .result-figure {
+      text-align: center;
+    }
+
+    .result-figure img {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .qualitative-intro {
+      max-width: 850px;
+      margin: 0 auto 2.5rem;
+      text-align: center;
+      color: var(--cm-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .comparison-case {
+      margin-bottom: 3.5rem;
+    }
+
+    .case-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      max-width: 1000px;
+      margin: 0 auto 1rem;
+    }
+
+    .case-number {
+      flex: 0 0 auto;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--cm-accent);
+      padding-top: 0.2rem;
+    }
+
+    .case-header h3 {
+      margin: 0 0 0.3rem;
+      font-size: 1.2rem;
+    }
+
+    .case-prompt {
+      margin: 0;
+      color: var(--cm-muted);
+      line-height: 1.55;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .comparison-video {
+      min-width: 0;
+    }
+
+    .method-label {
+      margin-bottom: 0.45rem;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--cm-text);
+    }
+
+    .comparison-video video {
+      width: 100%;
+      display: block;
+      border-radius: 9px;
+      border: 1px solid var(--cm-border);
+    }
+
+    .comparison-video.ours .method-label {
+      font-weight: 700;
     }
 
     .section-card {
@@ -106,26 +310,7 @@
       margin-top: 0.35rem;
     }
 
-    .method-step {
-      height: 100%;
-      border: 1px solid var(--cm-border);
-      border-radius: 16px;
-      padding: 1.1rem;
-      background: #fff;
-    }
 
-    .method-step .step-index {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 2rem;
-      height: 2rem;
-      border-radius: 999px;
-      background: var(--cm-accent);
-      color: #fff;
-      font-weight: 700;
-      margin-bottom: 0.75rem;
-    }
 
     .prompt-box {
       background: var(--cm-bg);
@@ -302,100 +487,116 @@
       font-size: 0.93rem;
     }
 
-    .intermediate-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      margin-top: 1.25rem;
-    }
-
-    .intermediate-case {
-      border: 1px solid var(--cm-border);
-      border-radius: 18px;
-      background: linear-gradient(180deg, #fbfdff 0%, #ffffff 100%);
-      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04);
-      padding: 1.25rem;
-    }
-
-    .intermediate-case-header {
-      margin-bottom: 1rem;
-    }
-
-    .intermediate-case-header p {
+    .intermediate-intro {
+      max-width: 850px;
+      margin: 0 auto 2.5rem;
+      text-align: center;
       color: var(--cm-muted);
-      margin-top: 0.35rem;
-      margin-bottom: 0;
+      font-size: 1.05rem;
+      line-height: 1.7;
     }
 
-    .intermediate-storyboard {
-      display: grid;
-      grid-template-columns: 1.05fr 1.1fr;
-      gap: 1rem;
-      align-items: start;
+    .prompt-box {
+      max-width: 900px;
+      margin: 0 auto 2.75rem;
+      padding: 1.1rem 1.35rem;
+      border-left: 4px solid var(--cm-accent);
+      background: var(--cm-accent-soft);
+      border-radius: 10px;
     }
 
-    .intermediate-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+    .prompt-label {
+      margin-bottom: 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--cm-accent);
     }
 
-    .intermediate-panel {
-      border: 1px solid var(--cm-border);
-      border-radius: 16px;
-      overflow: hidden;
-      background: #fff;
-    }
-
-    .intermediate-panel-header {
-      padding: 0.8rem 1rem;
-      border-bottom: 1px solid var(--cm-border);
-      background: #f8fbff;
-    }
-
-    .intermediate-panel-header h3 {
+    .prompt-box p {
       margin: 0;
-      color: #1f2937;
+      line-height: 1.6;
     }
 
-    .intermediate-panel-header p {
-      margin: 0.3rem 0 0;
-      color: var(--cm-muted);
-      font-size: 0.92rem;
+    .intermediate-block {
+      max-width: 1050px;
+      margin: 0 auto 3rem;
     }
 
-    .intermediate-media {
-      background: #f8fafc;
-    }
-
-    .intermediate-media img,
-    .intermediate-media video {
-      display: block;
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: contain;
-      background: #eef2f7;
-    }
-
-    .intermediate-panel .video-placeholder,
-    .intermediate-panel .figure-placeholder {
-      border: 0;
-      border-radius: 0;
-      min-height: 220px;
+    .intermediate-heading {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
     }
 
-    .intermediate-panel-body {
-      padding: 0.9rem 1rem 1rem;
+    .intermediate-step {
+      flex: 0 0 auto;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--cm-accent);
+      padding-top: 0.15rem;
     }
 
-    .intermediate-panel-body p {
+    .intermediate-heading h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.2rem;
+    }
+
+    .intermediate-heading p {
+      margin: 0;
       color: var(--cm-muted);
-      font-size: 0.95rem;
-      margin-bottom: 0.6rem;
+      line-height: 1.6;
+    }
+
+    .keyframe-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.8rem;
+    }
+
+    .keyframe-item {
+      text-align: center;
+    }
+
+    .keyframe-item img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      border: 1px solid var(--cm-border);
+    }
+
+    .keyframe-item span {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--cm-muted);
+    }
+
+    .trajectory-panel {
+      overflow-x: auto;
+      border-radius: 10px;
+      background: #f6f8fb;
+      border: 1px solid var(--cm-border);
+    }
+
+    .trajectory-panel pre {
+      margin: 0;
+      padding: 1.25rem;
+      font-size: 0.82rem;
+      line-height: 1.6;
+    }
+
+    .alignment-video {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .alignment-video video {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
     }
 
     .trajectory-meta {
@@ -487,12 +688,45 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">CausalMotion: Structured Physical Reasoning as Keyframe and Trajectory Guidance for Training-Free Video Generation</h1>
 
+          <h1 class="title is-1 publication-title">
+            CausalMotion: Structured Physical Reasoning as Keyframe and Trajectory Guidance for Training-Free Video Generation
+          </h1>
 
           <p class="project-note">
-            CausalMotion is a training-free framework that brings explicit physical reasoning into video generation by decomposing a prompt into causally grounded keyframes and object-centric trajectories, then using these structured signals to guide a pretrained diffusion model at inference time.
+            A training-free framework that injects explicit physical reasoning
+            into video generation through structured keyframes and object-centric trajectories.
           </p>
+
+          <div class="quick-links">
+            <a class="button is-dark is-rounded" href="#overview">
+              <span class="icon">
+                <i class="fas fa-images"></i>
+              </span>
+              <span>Overview</span>
+            </a>
+
+            <a class="button is-light is-rounded" href="#method">
+              <span class="icon">
+                <i class="fas fa-project-diagram"></i>
+              </span>
+              <span>Method</span>
+            </a>
+
+            <a class="button is-light is-rounded" href="#results">
+              <span class="icon">
+                <i class="fas fa-chart-bar"></i>
+              </span>
+              <span>Results</span>
+            </a>
+
+            <a class="button is-light is-rounded" href="#qualitative">
+              <span class="icon">
+                <i class="fas fa-play"></i>
+              </span>
+              <span>Videos</span>
+            </a>
+          </div>
 
         </div>
       </div>
@@ -502,370 +736,568 @@
 
 <section class="section" id="overview">
   <div class="container is-max-desktop">
-    <div class="section-card">
-      <!-- <div class="columns is-vcentered is-variable is-6"> -->
-        <div class="column is-12">
-          <div class="figure-placeholder">
-            <img src="./static/images/overview.png" alt="Overview Figure Placeholder" style="max-width: 100%; border-radius: 12px;">
-          </div>
-          <p class="mini-caption">
-            The framework performs structured physical reasoning to infer key states and object trajectories, then guides a pretrained diffusion model with these intermediate representations.
-          </p>
-        </div>
-      <!-- </div> -->
+    <h2 class="title is-2 section-title">Overview</h2>
+
+    <div class="content has-text-centered">
+      <img
+        src="./static/images/overview.png"
+        alt="Overview of CausalMotion"
+        class="overview-image"
+      >
+
+      <p class="caption">
+        CausalMotion first performs explicit physical reasoning to decompose a text prompt
+        into causally grounded keyframes and object-centric trajectories. These structured
+        representations are then used as guidance to steer a pretrained video diffusion model
+        during inference, improving physical plausibility and temporal consistency without training.
+      </p>
     </div>
   </div>
 </section>
 
 <section class="section" id="abstract">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified section-card">
-          <p>
-            Recent advances in diffusion-based video generation have significantly improved visual quality and short-term temporal coherence. However, existing methods still struggle to produce videos with physically consistent and causally plausible dynamics, especially in scenarios involving long-horizon interactions. This limitation arises from the fact that video diffusion models primarily learn physical consistency implicitly, while vision-language models can directly model physical laws. Based on this idea, in this work, we propose <strong>CausalMotion</strong>, a training-free framework that injects explicit physical reasoning into video generation through structured intermediate representations. Our key idea is to decouple reasoning from generation by leveraging a vision-language model to decompose a text prompt into a sequence of causally consistent keyframes and object-centric motion trajectories. These representations are then aligned and integrated as soft constraints to guide a pretrained video diffusion model during inference. This design enables explicit modeling of object dynamics and causal transitions without requiring additional training or supervision. Extensive experiments show that our method consistently improves physical plausibility and temporal coherence, particularly in dynamics-intensive scenarios, while maintaining high perceptual video quality.
-          </p>
-        </div>
-      </div>
+    <h2 class="title is-2 section-title">Abstract</h2>
+
+    <div class="content abstract-content">
+      <p>
+        Recent video diffusion models can generate visually compelling videos, yet they often
+        struggle with physically grounded motion and long-horizon interactions. We present
+        <strong>CausalMotion</strong>, a training-free framework that introduces explicit physical
+        reasoning into video generation. Given a text prompt, CausalMotion uses a multimodal
+        reasoning model to infer causally consistent keyframes and object-centric motion
+        trajectories, providing structured guidance for a pretrained video diffusion model.
+        Rather than replacing the latent representation with trajectory-conditioned features,
+        we perform localized latent updates at selected denoising steps, allowing the model to
+        preserve its generative prior while following the planned motion. Experiments show that
+        CausalMotion improves physical plausibility and temporal consistency across diverse
+        physically grounded video generation scenarios.
+      </p>
     </div>
   </div>
 </section>
 
 <section class="section" id="method">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Method</h2>
-    <div class="columns is-multiline is-variable is-5 mt-1">
-      <div class="column is-6-tablet is-3-desktop"><div class="method-step content"><div class="step-index">1</div><h3 class="title is-5">Keyframe Reasoning</h3><p>Decompose the prompt into key causal states with a multimodal reasoning model.</p></div></div>
-      <div class="column is-6-tablet is-3-desktop"><div class="method-step content"><div class="step-index">2</div><h3 class="title is-5">State Planning</h3><p>Infer object states including position, scale, velocity, and interactions.</p></div></div>
-      <div class="column is-6-tablet is-3-desktop"><div class="method-step content"><div class="step-index">3</div><h3 class="title is-5">Trajectory Construction</h3><p>Interpolate sparse physically grounded states into dense trajectories.</p></div></div>
-      <div class="column is-6-tablet is-3-desktop"><div class="method-step content"><div class="step-index">4</div><h3 class="title is-5">Latent Guidance</h3><p>Use aligned keyframes and trajectories to steer denoising at inference time.</p></div></div>
+
+    <h2 class="title is-2 section-title">Method</h2>
+
+    <div class="method-intro">
+      <p>
+        CausalMotion separates physical reasoning from video synthesis.
+        Given a text prompt, it first plans causally grounded keyframes and
+        object-centric motion, and then uses these structured representations
+        to guide a pretrained video diffusion model during inference.
+      </p>
     </div>
 
-    <div class="columns is-variable is-6 mt-4">
-      <div class="column is-12">
-        <div class="section-card">
-          <div class="figure-placeholder">
-            <img src="./static/images/method.png" alt="Method Figure Placeholder" style="max-width: 100%; border-radius: 12px;">
-          </div>
+    <div class="method-pipeline">
+
+      <div class="pipeline-item">
+        <div class="pipeline-number">01</div>
+        <div>
+          <h3>Physical Reasoning</h3>
+          <p>
+            A multimodal reasoning model decomposes the prompt into
+            causally meaningful key states and predicts the states of
+            relevant objects.
+          </p>
         </div>
       </div>
+
+      <div class="pipeline-arrow">↓</div>
+
+      <div class="pipeline-item">
+        <div class="pipeline-number">02</div>
+        <div>
+          <h3>Trajectory Construction</h3>
+          <p>
+            Sparse object states are connected into dense,
+            physically grounded trajectories while preserving
+            the planned interactions.
+          </p>
+        </div>
+      </div>
+
+      <div class="pipeline-arrow">↓</div>
+
+      <div class="pipeline-item">
+        <div class="pipeline-number">03</div>
+        <div>
+          <h3>Latent Guidance</h3>
+          <p>
+            Keyframes and trajectories are injected through localized
+            latent updates at selected denoising steps, guiding the
+            pretrained diffusion model without additional training.
+          </p>
+        </div>
+      </div>
+
     </div>
+
+    <div class="method-figure">
+      <img
+        src="./static/images/architecture.png"
+        alt="Architecture of CausalMotion"
+      >
+
+      <p class="caption">
+        Overview of the CausalMotion pipeline. Physical reasoning produces
+        structured keyframes and object-centric trajectories, which are
+        subsequently used to guide video generation at inference time.
+      </p>
+    </div>
+
   </div>
 </section>
 
 <section class="section" id="results">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Quantitative Comparisons
-    </h2>
 
-    <div class="section-card content">
+    <h2 class="title is-2 section-title">Results</h2>
+
+    <div class="results-intro">
       <p>
-        We evaluate <strong>CausalMotion</strong> on PhyGenBench using the PhyGenEval protocol and compare it against
-        both general video generation baselines and physically grounded methods. The results show the best overall
-        average performance, with especially strong gains in mechanics and thermal scenarios.
+        CausalMotion improves physical consistency while preserving the
+        generative capabilities of pretrained video diffusion models.
+        We evaluate it on both physics-focused benchmarks and
+        general video quality.
       </p>
-
-      <div class="eval-grid">
-        <div class="eval-card">
-          <img src="./static/images/quantitative-phygenbench.png" alt="Quantitative comparison on PhyGenBench">
-          <div class="card-label">
-            <strong>Table 1.</strong> Quantitative comparison on PhyGenBench across mechanics, optics, thermal, and material categories.
-          </div>
-        </div>
-        <div class="eval-card">
-          <img src="./static/images/vbench-vlm-judge.png" alt="VBench and VLM-as-judge evaluation">
-          <div class="card-label">
-            <strong>Table 2.</strong> VBench and VLM-as-judge evaluation for physical plausibility, temporal consistency,
-            semantic alignment, and overall quality.
-          </div>
-        </div>
-      </div>
     </div>
+
+    <div class="result-block">
+
+      <div class="result-heading">
+        <h3>Physics-Grounded Video Generation</h3>
+        <p>
+          On PhyGenBench, CausalMotion achieves strong performance across
+          mechanics, optics, thermal, and material phenomena.
+        </p>
+      </div>
+
+      <div class="result-figure">
+        <img
+          src="./static/images/quantitive_table/quantitative-phygenbench.jpg"
+          alt="Quantitative results on PhyGenBench"
+        >
+      </div>
+
+    </div>
+
+    <div class="result-block">
+
+      <div class="result-heading">
+        <h3>General Video Quality</h3>
+        <p>
+          Evaluation with VBench-VLM shows that the proposed guidance
+          maintains general video quality while introducing explicit
+          physical constraints.
+        </p>
+      </div>
+
+      <div class="result-figure">
+        <img
+          src="./static/images/quantitive_table/vbench-vlm-judge.png"
+          alt="VBench-VLM evaluation"
+        >
+      </div>
+
+    </div>
+
   </div>
 </section>
 
-<section class="section" id="intermediate-results">
+<section class="section" id="intermediate">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Intermediate Results</h2>
 
-    <div class="section-card content">
+    <h2 class="title is-2 section-title">Intermediate Results</h2>
+
+    <div class="intermediate-intro">
       <p>
-        To better explain the pipeline shown in the overview and method figures, we provide intermediate visualizations for representative examples, including generated keyframes and trajectory alignment.
+        CausalMotion explicitly plans the physical evolution of objects before
+        video synthesis. The following example illustrates how a text prompt
+        is converted into structured keyframes and object-centric trajectories,
+        which are subsequently aligned with the generated video.
       </p>
+    </div>
 
-      <div class="intermediate-flow">
-        <div class="intermediate-case">
-          <div class="intermediate-case-header">
-            <!-- <h3 class="title is-4">Example: A vibrant, elastic basketball is thrown forcefully towards the ground, capturing its dynamic interaction with the surface upon impact.</h3> -->
-            <p>Prompt: A vibrant, elastic basketball is thrown forcefully towards the ground, capturing its dynamic interaction with the surface upon impact.</p>
-          </div>
+    <div class="prompt-box">
+      <div class="prompt-label">Prompt</div>
+      <p>
+        A basketball is thrown upward, reaches its highest point, and then
+        falls back down.
+      </p>
+    </div>
 
-          <div class="intermediate-storyboard">
-            <div class="intermediate-stack">
-              <div class="intermediate-panel">
-                <div class="intermediate-panel-header">
-                  <h3 class="title is-5">Keyframes</h3>
-                  <p>Use a single overview image or a stitched panel of sparse causal states.</p>
-                </div>
-                <div class="intermediate-media">
-                  <img src="./static/images/intermediate/0.png" alt="Keyframe visualization">
-                  <img src="./static/images/intermediate/1.png" alt="Keyframe visualization">
-                  <img src="./static/images/intermediate/2.png" alt="Keyframe visualization">
-                  <img src="./static/images/intermediate/3.png" alt="Keyframe visualization">
-                </div>
-              </div>
-            </div>
+    <div class="intermediate-block">
 
-            <div class="intermediate-stack">
-              <div class="intermediate-panel">
-                <div class="intermediate-panel-header">
-                  <h3 class="title is-5">Predicted Trajectory</h3>
-                </div>
-                <div class="intermediate-panel-body">
-                  <div class="trajectory-meta">
-                    <div class="trajectory-tag"><strong>Object</strong><span>basketball</span></div>
-                    <div class="trajectory-tag"><strong>Format</strong><span>[x, y, w, h]</span></div>
-                  </div>
-                  <pre class="trajectory-code">"Frames": {
-  "1": [{"id": 0, "name": "basketball", "box": [255, 93, 204, 194]}],
-  "2": [{"id": 0, "name": "basketball", "box": [255, 167, 204, 194]}],
-  "...": "...",
-  "13": [{"id": 0, "name": "basketball", "box": [255, 93, 204, 194]}]
-}</pre>
-                </div>
-              </div>
-
-              <div class="intermediate-panel">
-                <div class="intermediate-panel">
-                  <div class="intermediate-panel-header">
-                    <h3 class="title is-5">Alignment Video</h3>
-                  </div>
-                  <div class="intermediate-media">
-                    <video controls muted loop playsinline>
-                      <source src="./static/videos/alignment_with_keyframes.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
+      <div class="intermediate-heading">
+        <span class="intermediate-step">01</span>
+        <div>
+          <h3>Keyframe Reasoning</h3>
+          <p>
+            The reasoning model identifies causally meaningful states that
+            describe the evolution of the physical event.
+          </p>
         </div>
       </div>
+
+      <div class="keyframe-grid">
+        <div class="keyframe-item">
+          <img src="./static/images/intermediate_result/0.png" alt="Keyframe 0">
+          <span>Initial state</span>
+        </div>
+
+        <div class="keyframe-item">
+          <img src="./static/images/intermediate_result/1.png" alt="Keyframe 1">
+          <span>Ascending</span>
+        </div>
+
+        <div class="keyframe-item">
+          <img src="./static/images/intermediate_result/2.png" alt="Keyframe 2">
+          <span>Highest point</span>
+        </div>
+
+        <div class="keyframe-item">
+          <img src="./static/images/intermediate_result/3.png" alt="Keyframe 3">
+          <span>Descending</span>
+        </div>
+      </div>
+
     </div>
+
+    <div class="intermediate-block">
+
+      <div class="intermediate-heading">
+        <span class="intermediate-step">02</span>
+        <div>
+          <h3>Trajectory Planning</h3>
+          <p>
+            Object states are transformed into a continuous trajectory that
+            provides explicit spatial and temporal motion guidance.
+          </p>
+        </div>
+      </div>
+
+      <div class="trajectory-panel">
+        <pre><code>"Frames": {
+  "1":  [{"id": 0, "name": "basketball", "box": [255, 93, 204, 194]}],
+  "2":  [{"id": 0, "name": "basketball", "box": [255, 167, 204, 194]}],
+  "7":  [{"id": 0, "name": "basketball", "box": [255, 380, 204, 150]}], // Collision
+  "13": [{"id": 0, "name": "basketball", "box": [255, 93, 204, 194]}]  // Rebound
+}</code></pre>
+      </div>
+
+    </div>
+
+    <div class="intermediate-block">
+
+      <div class="intermediate-heading">
+        <span class="intermediate-step">03</span>
+        <div>
+          <h3>Keyframe-Trajectory Alignment</h3>
+          <p>
+            The planned motion is aligned with the denoising process to guide
+            the generated video toward the intended physical evolution.
+          </p>
+        </div>
+      </div>
+
+      <div class="alignment-video">
+        <video controls muted playsinline loop>
+          <source
+            src="./static/videos/alignment_with_keyframes.mp4"
+            type="video/mp4"
+          >
+        </video>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
 <section class="section" id="qualitative">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Qualitative Comparisons</h2>
 
-    <div class="comparison-section">
-      <div class="section-card">
-        <div class="comparison-header content">
-          <p><strong>Prompt:</strong> Milk is poured into a cup of black coffee.</p>
-        </div>
-        <div class="comparison-table">
-          <!-- <div></div> -->
-          <div class="comparison-col-title">Wan2.1</div>
-          <div class="comparison-col-title">LTX-Video</div>
-          <div class="comparison-col-title">VLIPP</div>
-          <div class="comparison-col-title">CausalMotion</div>
+    <h2 class="title is-2 section-title">Qualitative Comparisons</h2>
 
-          <!-- <div class="comparison-row-label">Video Comparison</div> -->
-          <!-- <div></div> -->
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/wan/milk.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/ltx/milk-is-poured-into-a-cup-of-black.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/vlipp/milk.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/myresult/Milk_is_poured_into_a.mp4" type="video/mp4">
-            </video>
-          </div>
+    <div class="qualitative-intro">
+      <p>
+        We compare CausalMotion with representative video generation methods
+        across challenging physical interactions. Each example uses the same
+        text prompt for all methods.
+      </p>
+    </div>
+
+    <!-- Case 1 -->
+    <div class="comparison-case">
+
+      <div class="case-header">
+        <span class="case-number">01</span>
+        <div>
+          <h3>Liquid Interaction</h3>
+          <p class="case-prompt">
+            Milk is poured into a cup of black coffee, producing a visible
+            mixing process.
+          </p>
         </div>
+      </div>
+
+      <div class="comparison-grid">
+
+        <div class="comparison-video">
+          <div class="method-label">Wan2.2</div>
+          <video controls muted playsinline loop>
+            <source src="./static/videos/wan22/output_video_6.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="comparison-video">
+          <div class="method-label">LTX-Video</div>
+          <video controls muted playsinline loop>
+            <source src="./static/videos/ltx/milk-is-poured-into-a-cup-of-black.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="comparison-video">
+          <div class="method-label">Helios</div>
+          <video controls muted playsinline loop>
+            <source src="./static/videos/Helios/output_video_6.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="comparison-video ours">
+          <div class="method-label">CausalMotion</div>
+          <video controls muted playsinline loop>
+            <source src="./static/videos/myresult/Milk_is_poured_into_a.mp4" type="video/mp4">
+          </video>
+        </div>
+
       </div>
     </div>
 
-    <div class="comparison-section">
-      <div class="section-card">
-        <div class="comparison-header content">
-          <!-- <h3 class="title is-4">Comparison C: Egg Falling</h3> -->
-          <p><strong>Prompt:</strong> A wooden pencil is carefully dipped into a glass of crystal-clear water, showing the intriguing visual shifts and reflections caused by the interaction between the pencil and the liquid. </p>
-        </div>
-        <div class="comparison-table">
-          <!-- <div></div> -->
-          <div class="comparison-col-title">VLIPP</div>
-          <div class="comparison-col-title">PhyT2V</div>
-          <div class="comparison-col-title">LLM-grounded Video Diffusion</div>
-          <div class="comparison-col-title">CausalMotion</div>
+    <!-- Case 2 -->
+    <div class="comparison-case">
 
-          <!-- <div class="comparison-row-label">Video Comparison</div> -->
-          <!-- <div></div> -->
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/vlipp/output_73.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/phyt2v/output2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="comparison-video-card">
-            <img src="./static/videos/llm-grounded/video_1.gif" alt="LLM-grounded result">
-          </div>
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/myresult/output_video_73.mp4" type="video/mp4">
-            </video>
-          </div>
+      <div class="case-header">
+        <span class="case-number">02</span>
+        <div>
+          <h3>Object–Fluid Interaction</h3>
+          <p class="case-prompt">
+            A pencil is dipped into water, showing the interaction between
+            the object and the surrounding fluid.
+          </p>
         </div>
+      </div>
+
+      <div class="comparison-grid">
+
+        <div class="comparison-video">
+          <div class="method-label">Wan2.2</div>
+          <video controls muted playsinline loop>
+            <source src="./static/videos/wan22/output_video_73.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="comparison-video">
+          <div class="method-label">VLIPP</div>
+          <video controls muted playsinline loop>
+            <source src="./static/videos/vlipp/output_73.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="comparison-video">
+          <div class="method-label">PhyT2V</div>
+          <video controls muted playsinline loop>
+            <source src="./static/videos/phyt2v/output2.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="comparison-video ours">
+          <div class="method-label">CausalMotion</div>
+          <video controls muted playsinline loop>
+            <source src="./static/videos/myresult/output_video_73.mp4" type="video/mp4">
+          </video>
+        </div>
+
       </div>
     </div>
 
-    <div class="comparison-section">
-      <div class="section-card">
-        <div class="comparison-header content">
-          <!-- <h3 class="title is-4">Comparison D: Chameleon Catching a Flying Insect</h3> -->
-          <p><strong>Prompt:</strong> A small burning ball of paper was thrown into a pile of dry paper.</p>
-        </div>
-        <div class="comparison-table">
-          <!-- <div></div> -->
-          <div class="comparison-col-title">VLIPP</div>
-          <div class="comparison-col-title">PhyT2V</div>
-          <div class="comparison-col-title">LLM-grounded Video Diffusion</div>
-          <div class="comparison-col-title">CausalMotion</div>
+    <!-- Case 3 -->
+    <div class="comparison-case">
 
-          <!-- <div class="comparison-row-label">Video Comparison</div> -->
-          <!-- <div></div> -->
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/vlipp/output_141.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/phyt2v/output1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="comparison-video-card">
-            <img src="./static/videos/llm-grounded/video_0.gif" alt="LLM-grounded result">
-          </div>
-          <div class="comparison-video-card">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/myresult/output_video_141.mp4" type="video/mp4">
-            </video>
-          </div>
+      <div class="case-header">
+        <span class="case-number">03</span>
+        <div>
+          <h3>Long-Horizon Interaction</h3>
+          <p class="case-prompt">
+            A burning ball of paper is thrown into a pile of dry paper.
+          </p>
         </div>
       </div>
+
+      <div class="comparison-grid">
+
+        <div class="comparison-video">
+          <div class="method-label">Wan2.2</div>
+          <video controls muted playsinline loop>
+            <source src="./static/videos/wan22/output_video_141.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="comparison-video">
+          <div class="method-label">VLIPP</div>
+          <video controls muted playsinline loop>
+            <source src="./static/videos/vlipp/output_141.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="comparison-video">
+          <div class="method-label">PhyT2V</div>
+          <video controls muted playsinline loop>
+            <source src="./static/videos/phyt2v/output1.mp4" type="video/mp4">
+          </video>
+        </div>
+
+
+        <div class="comparison-video ours">
+          <div class="method-label">CausalMotion</div>
+          <video controls muted playsinline loop>
+            <source src="./static/videos/myresult/output_video_141.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
     </div>
+
   </div>
 </section>
 
 <section class="section" id="more-videos">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">More Videos</h2>
-    <div class="section-card content">
+    <h2 class="title is-2 section-title">More Examples Gallery</h2>
+    <div class="qualitative-intro">
+      <p>
+        A diverse collection of physical scenarios simulated by CausalMotion.
+      </p>
+    </div>
+
+    <div class="section-card">
       <div class="reserve-grid">
+
         <div class="comparison-reserved-card">
-          <div class="video-placeholder">
-            <video autoplay controls muted loop playsinline>
+          <div class="video-placeholder p-0">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 12px 12px 0 0;">
               <source src="./static/videos/myresult/output_video_20.mp4" type="video/mp4">
             </video>
-
           </div>
-          <div class="card-label">A timelapse of air being gradually and forcefully extracted from the interior of a thin, sealed balloon.</div>
+          <div class="card-label">Air being gradually extracted from a thin, sealed balloon.</div>
         </div>
+
         <div class="comparison-reserved-card">
-          <div class="video-placeholder">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/myresult/An_egg_falling_from_the.mp4" type="video/mp4">
+          <div class="video-placeholder p-0">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 12px 12px 0 0;">
+              <source src="./static/videos/myresult/output_video_77.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="card-label">An egg falling from the sky towards concrete ground.
-          </div>
+          <div class="card-label">A group of oil droplets is floating on the surface of water in the sunlight.</div>
         </div>
+
         <div class="comparison-reserved-card">
-          <div class="video-placeholder">
-            <video autoplay controls muted loop playsinline>
+          <div class="video-placeholder p-0">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 12px 12px 0 0;">
               <source src="./static/videos/myresult/output_video_8.mp4" type="video/mp4">
             </video>
-
           </div>
-          <div class="card-label">A tennis ball is gently placed on the surface of a bucket filled with water.</div>
+          <div class="card-label">A tennis ball placed gently on the water surface.</div>
         </div>
+
         <div class="comparison-reserved-card">
-          <div class="video-placeholder">
-            <video autoplay controls muted loop playsinline>
+          <div class="video-placeholder p-0">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 12px 12px 0 0;">
               <source src="./static/videos/myresult/output_video_135.mp4" type="video/mp4">
             </video>
-
           </div>
-          <div class="card-label">A weak, frail porcelain plate is flung with significant speed at a robust, wooden table, where it collides upon impact.</div>
+          <div class="card-label">A frail porcelain plate flung at a wooden table and shattering.</div>
         </div>
-        <div class="comparison-reserved-card">
-          <div class="video-placeholder">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/myresult/output_video_15.mp4" type="video/mp4">
 
+        <div class="comparison-reserved-card">
+          <div class="video-placeholder p-0">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 12px 12px 0 0;">
+              <source src="./static/videos/myresult/output_video_30.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-label">A vibrant, elastic beach ball is thrown forcefully towards the ground, capturing its dynamic interaction with the surface upon impact.</div>
+        </div>
+
+        <div class="comparison-reserved-card">
+          <div class="video-placeholder p-0">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 12px 12px 0 0;">
+              <source src="./static/videos/myresult/output_video_38.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-label">A glistening dewdrop sliding across a waxed apple.</div>
+        </div>
+
+        <div class="comparison-reserved-card">
+          <div class="video-placeholder p-0">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 12px 12px 0 0;">
+              <source src="./static/videos/myresult/output_video_15.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="card-label">A timelapse of a water-filled soft cloth being forcefully squeezed by hand, with the pressure intensifying rapidly over time.</div>
         </div>
-        <div class="comparison-reserved-card">
-          <div class="video-placeholder">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/myresult/output_video_38.mp4" type="video/mp4">
-            </video>
 
-          </div>
-          <div class="card-label">A glistening dewdrop is sliding gracefully across the smooth surface of a waxed apple, accentuating its shape as it moves.</div>
-        </div>
         <div class="comparison-reserved-card">
-          <div class="video-placeholder">
-            <video autoplay controls muted loop playsinline>
-              <source src="./static/videos/myresult/output_video_99.mp4" type="video/mp4">
-            </video>
-
-          </div>
-          <div class="card-label">A timelapse captures the gradual transformation of ice cream as the temperature rises significantly.</div>
-        </div>
-        <div class="comparison-reserved-card">
-          <div class="video-placeholder">
-            <video autoplay controls muted loop playsinline>
+          <div class="video-placeholder p-0">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 12px 12px 0 0;">
               <source src="./static/videos/myresult/A_chameleon_eats_a_flying.mp4" type="video/mp4">
             </video>
-
           </div>
-          <div class="card-label">A chameleon eats a flying insect.
-          </div>
+          <div class="card-label">A chameleon extending its tongue to capture a flying insect.</div>
         </div>
+
         <div class="comparison-reserved-card">
-          <div class="video-placeholder">
-            <video autoplay controls muted loop playsinline>
+          <div class="video-placeholder p-0">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 12px 12px 0 0;">
               <source src="./static/videos/myresult/result.mp4" type="video/mp4">
             </video>
-
           </div>
-          <div class="card-label">A glass beverage dispenser pouring grapefruit juice into a glass that has some water inside.</div>
+          <div class="card-label">Pouring grapefruit juice into a water-filled glass.</div>
         </div>
+
+        <div class="comparison-reserved-card">
+          <div class="video-placeholder p-0">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 12px 12px 0 0;">
+              <source src="./static/videos/myresult/physic-2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-label">Two pillows on a table and two grabber tools hanging above them from which a brown tennis ball and an orange block are suspended. The grabber tools let go of the ball and block.</div>
+        </div>
+
+        <div class="comparison-reserved-card">
+          <div class="video-placeholder p-0">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 12px 12px 0 0;">
+              <source src="./static/videos/myresult/output_video_113.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-label">A timelapse captures the transformation as mist in a rainforest comes into contact with a cold metal surface.</div>
+        </div>
+
+        <div class="comparison-reserved-card">
+          <div class="video-placeholder p-0">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 12px 12px 0 0;">
+              <source src="./static/videos/myresult/output_video_96.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-label">A timelapse captures the gradual transformation of a piece of ice as the temperature rises significantly.</div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
-
 
 <footer class="footer">
   <div class="container">
