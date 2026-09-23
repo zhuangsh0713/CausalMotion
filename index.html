@@ -689,43 +689,85 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
 
+          <!-- 1. 标题 -->
           <h1 class="title is-1 publication-title">
             CausalMotion: Structured Physical Reasoning as Keyframe and Trajectory Guidance for Training-Free Video Generation
           </h1>
 
+          <!-- 2. 作者 -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Sihan Zhuang<sup>1,2*</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=3fWSC8YAAAAJ">Xinyuan Chen</a><sup>2&dagger;</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://tianfan.info/">Tianfan Xue</a><sup>3,2&dagger;</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://wyhsirius.github.io/">Yaohui Wang</a><sup>2&dagger;</sup>
+            </span>
+          </div>
+
+          <!-- 3. 单位 -->
+          <div class="is-size-5 publication-affiliations mt-2">
+            <span class="author-block"><sup>1</sup>University of Science and Technology of China</span>
+            <span class="author-block"><sup>2</sup>Shanghai Artificial Intelligence Laboratory</span>
+            <span class="author-block"><sup>3</sup>The Chinese University of Hong Kong</span>
+          </div>
+
+          <!-- 4. 脚注说明 -->
+          <div class="is-size-6 publication-affiliations mt-1">
+            <span class="author-block"><sup>*</sup>Work done during internship at Shanghai Artificial Intelligence Laboratory</span>
+            <span class="author-block"><sup>&dagger;</sup>Corresponding author</span>
+          </div>
+
+          <!-- 5. 一句话简介（移到按钮上方） -->
           <p class="project-note">
             A training-free framework that injects explicit physical reasoning
             into video generation through structured keyframes and object-centric trajectories.
           </p>
 
+          <!-- 6. 按钮区（合并成一组，用统一的容器） -->
           <div class="quick-links">
-            <a class="button is-dark is-rounded" href="#overview">
-              <span class="icon">
-                <i class="fas fa-images"></i>
-              </span>
+
+            <!-- 资源按钮 -->
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/2606.14317"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="ai ai-arxiv"></i></span>
+                <span>arXiv</span>
+              </a>
+            </span>
+
+            <span class="link-block">
+              <a href="https://github.com/zhuangsh0713/CausalMotion"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code</span>
+              </a>
+            </span>
+
+            <!-- 章节导航按钮 -->
+            <a class="button is-light is-rounded mt-1" href="#overview">
+              <span class="icon"><i class="fas fa-images"></i></span>
               <span>Overview</span>
             </a>
 
-            <a class="button is-light is-rounded" href="#method">
-              <span class="icon">
-                <i class="fas fa-project-diagram"></i>
-              </span>
+            <a class="button is-light is-rounded mt-1" href="#method">
+              <span class="icon"><i class="fas fa-project-diagram"></i></span>
               <span>Method</span>
             </a>
 
-            <a class="button is-light is-rounded" href="#results">
-              <span class="icon">
-                <i class="fas fa-chart-bar"></i>
-              </span>
+            <a class="button is-light is-rounded mt-1" href="#results">
+              <span class="icon"><i class="fas fa-chart-bar"></i></span>
               <span>Results</span>
             </a>
 
-            <a class="button is-light is-rounded" href="#qualitative">
-              <span class="icon">
-                <i class="fas fa-play"></i>
-              </span>
+            <a class="button is-light is-rounded mt-1" href="#qualitative">
+              <span class="icon"><i class="fas fa-play"></i></span>
               <span>Videos</span>
             </a>
+
           </div>
 
         </div>
@@ -733,6 +775,7 @@
     </div>
   </div>
 </section>
+
 
 <section class="section" id="overview">
   <div class="container is-max-desktop">
@@ -1298,6 +1341,25 @@
     </div>
   </div>
 </section>
+
+
+<section class="section" id="bibtex">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">BibTeX</h2>
+    <div class="bibtex-box">
+<pre><code>@misc{zhuang2026causalmotionstructuredphysicalreasoning,
+  title={CausalMotion: Structured Physical Reasoning as Keyframe and Trajectory Guidance for Training-Free Video Generation}, 
+  author={Sihan Zhuang and Xinyuan Chen and Tianfan Xue and Yaohui Wang},
+  year={2026},
+  eprint={2606.14317},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2606.14317}, 
+}</code></pre>
+    </div>
+  </div>
+</section>
+
 
 <footer class="footer">
   <div class="container">
