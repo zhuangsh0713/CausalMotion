@@ -81,7 +81,7 @@ body {
 
 .abstract-content {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 2.5rem auto 0;
 }
 
 .abstract-content p {
